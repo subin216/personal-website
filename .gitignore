@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.DS_Store
+*.tsbuildinfo
+.env*
+references/
+*.pdf
+*.docx
+.pnpm-store/
+.vercel/
+*.log
+coverage/
