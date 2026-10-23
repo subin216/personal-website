@@ -30,7 +30,7 @@ pnpm start
 - `i18n/`: next-intl routing, navigation, and server configuration.
 - `proxy.ts`: locale routing; English by default, with remembered explicit Korean selection at `/`.
 - `app/globals.css`: responsive design tokens and styles, Tailwind CSS entrypoint.
-- `public/og.svg`: simple default Open Graph artwork.
+- `public/og.png`: social sharing image; `og.svg` is the original vector artwork.
 
 ## Preferences and accessibility
 
@@ -44,7 +44,7 @@ Update translation messages for prose, and the shared profile data for records. 
 
 Original PDFs/DOCX files and `references/` are ignored by Git and must stay outside `public/`. Never put private source material in website assets.
 
-Before deployment, set the final production origin through Next.js `metadataBase` and add canonical/hreflang URLs for that origin. The current app deliberately avoids inventing a domain. Some social platforms require a raster Open Graph image rather than SVG; convert the supplied artwork to PNG when preparing publication.
+Social sharing metadata uses `https://subinbae.vercel.app` and a 1200 × 630 PNG image. Update `metadataBase` if the production domain changes.
 
 ## Validation
 
